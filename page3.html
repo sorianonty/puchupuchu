@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice for Showcase - Basic Web</title>
+    <link rel="stylesheet" href="S2.css">
+</head>
+
+                        <body> 
+
+              <div class="header">
+                <div class="top-nav">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li><!--DEFAULT -->
+                            <li><a href="page 2.html">PROFILE</a></li><!---a page whre in my short testimonial and skills-->
+                            <li><a href="page4.html">TUTORIALS</a></li><!---youtube channel that may help them-->
+                            <li><a href="page5.html">FAQ's</a></li><!--instructions ,clarification and etc.-->
+
+
+                        </ul>
+                                    <button> <A href="https://www.facebook.com/sorianonty">Contact </A></button>
+                                 
+
+                </div>
+                <div class="side-nav">
+                                    <img src="logo.png" alt="logo">
+                                     <a href="#">LATEST PROJECT</a>
+                                     
+                </div>  
+                <br><br>
+                
+                <div class="community">
+                  <H1 style="color:#000942;">Our Community</H1> <BR>
+                          
+
+                  <button class="btn btn-background-slide"><a href="https://discord.gg/akCXSMdP">Discord</a></button>
+                  <button class="Fb"><a href="https://www.facebook.com/groups/programmersphilippines"  >Facebook</a></button>
+                  <button class="stck"><a href="https://stackoverflow.com/"  >Stack Overflow </a></button>
+                </div>
+                
+                
+              </div>              
+
+                        </body>
+
+</html>
+<STYle>
+
+.community{
+  
+  background-color: rgba(255, 255, 255, 0.481);
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 50px;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 30%;
+  margin-top: 8%;
+}
+.btn {
+  background-color: var(--background-color);
+  color: #222;
+  padding: .5em 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+
+  --background-color: #E3E3E3;
+  --border-size: 2px;
+  --accent-color: rgb(193, 102, 213);
+  
+}
+
+.btn.btn-background-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--accent-color);
+
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+
+}
+
+.btn.btn-background-slide:hover::before,
+.btn.btn-background-slide:focus::before {
+  transform: scaleX(1);
+  border-radius: 10px;
+  
+}
+
+.btn.btn-background-slide {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+  
+}
+.btn.btn-background-slide a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+.btn.btn-background-slide:hover,
+.btn.btn-background-slide:focus {
+  color: white;
+  border-radius: 10px;
+}
+/*end*/
+
+
+.Fb{
+  text-decoration: none;
+  background-color: var(--background-color);
+  color: #222;
+  padding: .5em 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+ 
+
+  --background-color: #E3E3E3;
+  --border-size: 2px;
+  --accent-color: rgb(26, 63, 105);
+  text-decoration:none;
+}
+
+.Fb::before {
+  text-decoration:none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--accent-color);
+
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-decoration:none;
+  border-radius: 10px;
+}
+
+.Fb:hover::before,
+.Fb:focus::before {
+  transform: scaleX(1);
+  border-radius: 10px;
+}
+
+.Fb {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+  text-decoration:none;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+.Fb a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.Fb:hover,
+.Fb:focus {
+  color: white;
+  text-decoration:none;
+  border-radius: 10px;
+}
+/*end*/
+
+.stck{
+  background-color: var(--background-color);
+  color: #222;
+  padding: .5em 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+
+  --background-color: #E3E3E3;
+  --border-size: 2px;
+  --accent-color: rgb(231, 152, 47);
+}
+
+.stck::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--accent-color);
+
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+}
+
+.stck:hover::before,
+.stck:focus::before {
+  transform: scaleX(1);
+  border-radius: 10px;
+}
+
+.stck {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.stck a{
+  text-decoration: none;
+  color: black;
+}
+.stck:hover,
+.stck:focus {
+  color: white;
+  border-radius: 10px;
+}
+
+button A{
+
+  text-decoration: none;
+  color: white;
+}
+</STYle>

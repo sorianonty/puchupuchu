@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice for Showcase - Basic Web</title>
+    <link rel="stylesheet" href="S2.css">
+</head>
+
+                        <body> 
+
+              <div class="header">
+                <div class="top-nav">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="page3.html">COMMUNITY</a></li>
+                            <li><a href="page4.html">TUTORIALS</a></li>
+                            <li><a href="page5.html">FAQ'S</a></li>
+
+
+                        </ul>
+                        <button> <A href="https://www.facebook.com/sorianonty">Contact </A></button>
+                                 
+
+                </div>
+                <div class="side-nav">
+                                    <img src="logo.png" alt="logo">
+                                     <div class="sik"><a href="#">LATEST PROJECT</a></div>
+                                     
+              <div class="tt">            
+                <h1 style="text-align: center; 
+                margin-left:50px;padding-bottom:0;margin-top:0;padding-top:5px;
+                color: rgba(240, 248, 255, 0.555);">Profile</h1>
+                <img src="pictures/pic1.jpg" alt="pogi" width="124" height="124" class="profile__image" ><!--
+                
+                --><h2 class="profile__name">Teamothy Josh Soriano</h2>
+               
+                  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                  <section class="profile__details">
+            
+                  <ul class="profile__stats">
+                    <li>
+                      <h3 class="profile_stat__heading">Followers</h3>
+                      <div class="profile_stat__number">285</div>
+                    </li><!--
+                    --><li>
+                      <h3 class="profile_stat__heading">Following</h3>
+                      <div class="profile_stat__number">255</div>
+                    </li><!--
+                    --><li>
+                      <h3 class="profile_stat__heading">Languages</h3>
+                      <div class="profile_stat__number">HTML,<br>CSS,<br>& JS</div>
+                    </li>
+                  </ul>
+                 
+                  
+                  <ul class="social">
+                    <!-- Slideshow container -->
+          
+                    <li class="location"><i class="fa fa-map-marker">
+
+                    </i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="margin-right:450px;color: rgba(240, 248, 255, 0.577);">
+                      BSIT CEIT37-203A Filipino, MNL<br>
+                                                                                      
+                    </span></li>
+                    <div class="slideshow-container" style="float: right;margin-left: 120px; margin-top: 40px;">
+          
+                      <!-- Full-width images with number and caption text -->
+                      <div class="mySlides fade">
+                        
+                        <img src="pictures/img1.png" style="width:70%">
+                        
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        
+                        <img src="pictures/img2.png" style="width:70%">
+                        
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        
+                        <img src="pictures/img3.gif" style="width:70%">
+                       
+                      </div>
+                    </section>
+                      
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                  </ul>
+                </section>
+              </div><!-- /popup__inner -->
+            </div><!-- /popup -->
+          </div>
+          <script>let slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }</script>
+              
+                                     
+                </div>  
+
+                </div>
+                
+                
+                
+
+                        </body>
+
+</html>
+
+<style>
+  .sik{
+    text-decoration: none;
+                     color:#fff;
+                     transform: rotate(-90deg) translateX(-260%);
+                     width: max-content;
+                     position: fixed;
+    
+  }
+.profile_details{
+  position: relative;
+}
+button A{
+
+text-decoration: none;
+color: white;
+}
+</style>

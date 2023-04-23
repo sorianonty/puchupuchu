@@ -1,0 +1,147 @@
+*{
+    
+    
+                            margin: 0;
+                            padding: 0;
+                            font-family: 'Poppins', sans-serif;
+                            box-sizing: border-box;
+
+
+}
+
+.header{
+       /*STYLE AS DEFAULT*/
+                            width: 100%;
+                            height: 100vh;
+                            background: #000942;
+                            padding-left: 11%;
+                            padding-right: 8%; 
+                            position: relative;  
+                            /*IMAGES RIGHT SIDE-MIDDLE*/
+
+
+                            background-image: url(pic1.png);
+                            
+                            background-size: 38%;
+                            background-repeat: no-repeat;
+                            background-position: 92% 100%;
+                            position: relative;
+
+
+
+   }
+
+ .top-nav{
+       /*a bar where the home button displayed*/
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between; 
+                            padding: 30px 0 15px;
+                            border-bottom: 1px solid #bababa ;
+
+ }
+
+ .top-nav ul li{
+       /*The list where home and friends in order*/
+                            list-style: none;
+                            display: inline-block;
+                            margin-right:30px;
+                            margin-top:10px;
+                            margin-bottom:10px;
+                            cursor:pointer;
+
+ }
+
+ .top-nav ul li a{
+       /*design at top bar specifically at href or linkin*/
+                            text-decoration: none;
+                            color:#fff;
+                            font-size: 15px;
+
+ } 
+ .top-nav ul :hover{
+
+       background-color: #000942;
+       opacity: 0.8;
+       
+ }
+ .top-nav button{
+                            background: #e91e63;
+                            color: #fff;
+                            border:0;
+                            outline: 0;
+                            border-radius: 30px;
+                            padding: 10px 20px;
+                            cursor:pointer;
+ }
+
+ .side-nav{
+                            position: fixed;
+                            left: 0;
+                            top: 0;
+                            width: 100px;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center; 
+                            flex-direction: column;
+                            padding: 50px 0;
+                            background: linear-gradient(#00bcd4,#e91e63,#3f51b5, #00bcd4);
+                            background-size: 100% 500%;
+                            background-position: 0 40%;
+}
+
+/*Animate in order to client get mad*/
+.side-nav{
+       animation: backcolor 20s linear infinite reverse;
+
+}
+@keyframes backcolor{
+
+0%{
+              background-position: 0 0%;
+
+}
+
+100%{
+       background-position: 0 400%;
+
+
+}
+
+
+}
+
+.side-nav.logo{
+                     width: 60px;
+                     cursor: pointer;
+}
+.side-nav a{
+
+                     text-decoration: none;
+                     color:#fff;
+                     transform: rotate(-90deg) translateX(50%);
+                     width: max-content;
+}
+.NENEK{
+       color: #fff;
+       margin-top: 20%;
+       font-size: 18px;
+     
+}
+
+.NENEK h1{
+       color: #fff;
+       font-weight: 500;
+       font-size: 86px;
+       max-width: 550px;
+       line-height: 95px;
+       margin-top: 10px;
+       margin-bottom: 30px;
+     
+}
+button A{
+
+       text-decoration: none;
+       color: white;
+     }

@@ -1,0 +1,328 @@
+*{
+    
+    
+                            margin: 0;
+                            padding: 0;
+                            font-family: 'Poppins', sans-serif;
+                            box-sizing: border-box;
+
+
+}
+
+.header{
+       /*STYLE AS DEFAULT*/
+                            width: 100%;
+                            height: 100vh;
+                            background: #000942;
+                            padding-left: 11%;
+                            padding-right: 8%; 
+                            position: relative;  
+                            /*IMAGES RIGHT SIDE-MIDDLE*/
+
+
+                            background-image: url(pic1.png);
+                            
+                            background-size: 38%;
+                            background-repeat: no-repeat;
+                            background-position: 92% 100%;
+                            position: relative;
+
+
+
+   }
+
+ .top-nav{
+       /*a bar where the home button displayed*/
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between; 
+                            padding: 30px 0 15px;
+                            border-bottom: 1px solid #bababa ;
+
+ }
+
+ .top-nav ul li{
+       /*The list where home and friends in order*/
+                            list-style: none;
+                            display: inline-block;
+                            margin-right:30px;
+                            margin-top:10px;
+                            margin-bottom:10px;
+                            cursor:pointer;
+
+ }
+
+ .top-nav ul li a{
+       /*design at top bar specifically at href or linkin*/
+                            text-decoration: none;
+                            color:#fff;
+                            font-size: 15px;
+
+ } 
+ .top-nav ul :hover{
+
+       background-color: #000942;
+       opacity: 0.8;
+       
+ }
+ .top-nav button{
+                            background: #e91e63;
+                            color: #fff;
+                            border:0;
+                            outline: 0;
+                            border-radius: 30px;
+                            padding: 10px 20px;
+                            cursor:pointer;
+ }
+
+ .side-nav{
+                            position: fixed;
+                            left: 0;
+                            top: 0;
+                            width: 100px;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center; 
+                            flex-direction: column;
+                            padding: 50px 0;
+                            background: linear-gradient(#00bcd4,#e91e63,#3f51b5, #00bcd4);
+                            background-size: 100% 500%;
+                            background-position: 0 40%;
+}
+
+/*Animate in order to client get mad*/
+.side-nav{
+       animation: backcolor 20s linear infinite reverse;
+
+}
+@keyframes backcolor{
+
+0%{
+              background-position: 0 0%;
+
+}
+
+100%{
+       background-position: 0 400%;
+
+
+}
+
+
+}
+
+.side-nav.logo{
+                     width: 60px;
+                     cursor: pointer;
+}
+.side-nav a{
+
+                     text-decoration: none;
+                     color:#fff;
+                     transform: rotate(-90deg) translateX(50%);
+                     width: max-content;
+}
+
+
+
+        .profile__image {
+          
+       
+          margin-top: 5px;
+          bottom: -90px  ;
+          border: 1px solid black;
+          background-color: rgba(0, 0, 0, 0.284);
+          display: block;
+          transform: translate(14%,50%);
+          
+          @media screen and (min-width: 30em) {
+            display: inline-block;
+            margin: 0 3em 0 2em;
+          }
+        }
+
+        .profile__details {
+          margin: 30px;
+          text-align: center;
+          padding:5px; 
+          font: 300 1em/1.5 "Open Sans Condensed", sans-serif;
+          @media screen and (min-width: 30em) {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+          }
+        }
+
+        .profile__stats {
+          @extend %ui-list;
+          margin: 0;
+          float:left;
+          
+          > li {
+            text-align: center;
+            border-right: 1px solid lightgray;
+            padding: 5px;
+            line-height: 1;
+            display:inline;
+            
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child { 
+              border-right: none;
+              padding-right: 0;
+            }
+          }
+        }
+        .profile_stat__heading {
+          font-weight: 300;
+          text-transform: capitalize;
+         
+          margin: 0 0 0.25em 0;
+          color: slategray;
+        }
+        .profile_stat__number {
+    
+          color: slategray;
+        }
+        .profile__name {
+      
+          margin-bottom: 50px;
+          margin-left: 150px;
+          font-family: inherit,Georgia, Times, serif;
+          color: rgba(255, 255, 255, 0.556);
+          transform: translate(13%,30%);
+          position: relative;
+
+        }
+
+        .social {
+          @extend %ui-list;
+          margin-bottom: 0;
+          margin-left: 0;
+          list-style-type: none;
+          
+          > li:not(:last-child) {
+            margin-right: 0.5em;
+          }
+          .location {
+            margin-left: 1em;
+            
+            &, .fa { color: darkgreen; }
+            span { 
+             
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 0.25em;
+            }
+          }
+          a {
+            display: block;
+            line-height: 1.1;
+          }
+          .fa {
+            font-size: 1.25em;
+            color: slategray;
+          }
+          .fa-github:hover    { color: #171515; }
+          .fa-instagram:hover { color: #3f729b; }
+          .fa-twitter:hover   { color: #00acee; }
+          .fa-bitbucket:hover { color: #205081; }
+        }
+        * {box-sizing:border-box}
+
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: right;
+         
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+          
+        }
+        div.mySlides.fade {
+            float: right;
+            vertical-align: right;
+            transform: translate(20%,-150%);
+
+            
+          }
+          .slideshow-container{
+
+            float: right;
+          }
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          
+          width: auto;
+     
+          padding: 5pxpx;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+       
+        
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #d7d4d489;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .tt{
+ margin-left:1600px ;
+margin-top: 0;
+ background-color: rgba(255, 255, 255, 0.073);
+ max-width: 10000px;
+ padding-right:50px;
+ margin-top: 0;
+ transform: translate(1%,1%);
+ position: static;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+ 
